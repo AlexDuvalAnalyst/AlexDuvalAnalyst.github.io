@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>DATA-LAB</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>DATA</strong> <span style = "color:white;">projects</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="profil.html">Mon profil</a></li>
+						</ul>
+
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/datalab.png" alt="" />
+							</span>
+							<header class="major">
+								<h1>DATA-LAB</h1>
+								<a href = "https://devdeb.shinyapps.io/data-lab/" style="color:#242943;font-weight:bold;text-decoration: none; font-size: 3em;" class="link"  target=”_blank”>Accédez à DATA-LAB</a>
+							</header>
+							<div class="content" style="font-weight:bold;font-size:1.5em;color:white;">
+								<p>Mon plus gros projet actuel et toujours en cours de développement. <br>
+									Une application web dédiée à l'analyse de données environnementales !<br> 
+									(R, css, highcharts, SQL, tout y est !)</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main" style = "background-color:#242943;">
+
+						<!-- One -->
+							<section id="one" style="background-color:#235c5e;">
+								<div class="inner">
+									<header class="major">
+										<h2>Une application web / tableau de bord intéractif !</h2>
+									</header>
+									<p>La thématique de cette application, est la visualisation et l'analyse de données environnementales, sur la qualité de l'eau.
+										Il s'agit surtout d'une coquille vide, cette dernière pouvant bien évidemment être utilisée et exploitée pour des données 
+										issues de thématiques différentes !<br>
+									
+										Les principaux défis sur ce genre d'application, sont liés à l'intégration d'une interface graphique externe à R (<a href="https://www.highcharts.com/" class="link"  target=”_blank”>Highcharts</a>), 
+										l'implémentation d'un peu (ou beaucoup) de CSS et javascript, ainsi que la gestion des requêtes SQL, et des analyses de plusieurs centaines de milliers de données, 
+									en réponse aux requêtes utilisateurs.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights" >
+								<section>
+									<a href="shinyapp.html" class="image">
+										<img src="images/téléchargement.jfif" alt="" data-position="center center" />
+									</a>
+									<div class="content"  style = "background-color:#468082;">
+										<div class="inner" >
+											<header class="major">
+												<h3>Une structure Shiny app</h3>
+											</header>
+											<p>Shiny est un package disponible sur R, et permet le développement d'applications web, principalement dédiées à la visualisation et l'analyse de données</p>
+											<ul class="actions">
+												<li><a href="shinyapp.html" class="button">En apprendre plus sur la structure de l'appli</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://www.highcharts.com/" target=”_blank” class="image">
+										<img src="images/highcharts.png" alt="" data-position="top center" />
+									</a>
+									<div class="content" style="background-color:#235c5e;">
+										<div class="inner" >
+											<header class="major">
+												<h3>Un construction graphique sous Highcharts</h3>
+											</header>
+											<p><a href="https://www.highcharts.com/" class="link"  target=”_blank”>Highcharts</a> est une library JavaScript, permettant le développement de diverses interfaces graphiques, de visualisation de données.</bre> 
+											Il existe un package R permettant directement l'implémentation de cet outil. </p>
+										
+										</div>
+									</div>
+								</section>
+								<section>
+									<a href="https://www.postgresql.org/" target=”_blank” class="image">
+										<img src="images/post.png" alt="" style = "height: 100%;" data-position="25% 25%" />
+									</a>
+									<div class="content" style = "background-color:#468082;">
+										<div class="inner">
+											<header class="major">
+												<h3>Une base de données SQL</h3>
+											</header>
+											<p>Les données sont initialement stockées dans une base de données PostgreSQL (+ 2 millions de données).
+												Cette base est dupliquée (SQLite), pour faciliter son importation lors du déploiment de l'application, 
+												sur les servers <a href="https://www.shinyapps.io/" class="link"  target=”_blank”>shinyapp.io</a>
+											</p>
+										</div>
+									</div>
+								</section>
+							</section>
+
+					<!-- Contact -->
+					<section id="contact" style="background-color:#235c5e;">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Nom</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Contactez moi !" class="primary" /></li>
+										<li><input type="reset" value="Effacer" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">alexandre76370@hotmail.fr</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Mobile</h3>
+										<span>0677411997</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Adresse</h3>
+										<span>3 Avenue du Général Leclerc<br />
+										Déville-lès-Rouen, 76250<br />
+										France</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer" style="background-color:#214247;">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/alexandre-duval-6021711ba/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
