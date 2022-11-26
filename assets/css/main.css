@@ -3540,7 +3540,7 @@ input, select, textarea {
 		}
 
 		#banner.style6:after {
-			background-color: red;
+			background-color: #333461;
 		}
 
 		body.is-preload #banner:after {
