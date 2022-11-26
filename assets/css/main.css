@@ -2517,7 +2517,13 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
 		border: 0;
-		box-shadow: inset 0 0 0 3px white;
+		box-shadow:
+		0 0 8px cyan,
+		inset 0 0 8px cyan,
+		0 0 16px cyan,
+		inset 0 0 16px #235c5e,
+		0 0 32px #235c5e,
+		inset 0 0 32px #235c5e; 	
 		color: #ffffff;
 		cursor: pointer;
 		display: inline-block;
@@ -3148,13 +3154,20 @@ input, select, textarea {
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #ffffff;
-				color: #242943;
+				background-color: rgba(51, 52, 97,0.6);
+				box-shadow:
+    0 0 8px cyan,
+    inset 0 0 8px cyan,
+    0 0 16px cyan,
+    inset 0 0 16px #333461,
+    0 0 32px #333461,
+    inset 0 0 32px #333461; 
+				color:white;
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
 				padding: 0 0.125em 0 0.375em;
-				border-radius: 7px;
+				border-radius: 5px;
 			}
 
 			#header .logo:hover strong {
@@ -3269,7 +3282,7 @@ input, select, textarea {
 			}
 
 			#header.alt.style2 .logo strong {
-				color: #214247;
+				color: white;
 			}
 
 			#header.alt.style3 .logo strong {
