@@ -15,7 +15,7 @@
 	<body class="is-preload">
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" style = "background-color: #1e222b;">
 
 				<!-- Header -->
 				<!-- Note: The "styleN" class below should match that of the banner element. -->
@@ -40,33 +40,56 @@
 					<section id="banner" class="style5">
 						<div class="inner">
 							<span class="image">
-								<img src="images/crypto.png" alt="" />
+								<img src="images/cryptofond.png" alt="" />
 							</span>
 							<header class="major">
 								<h1>CRYPTO</h1>
-								<a href = "https://devdeb.shinyapps.io/crypto/" style="color:gold;font-weight:bold;text-decoration: none; font-size: 3em;" class="link"  target=”_blank”>→ Accédez à CRYPTO ←</a>
+								<a href = "https://devdeb.shinyapps.io/crypto/" style="color:white;font-weight:bold;text-decoration: none; font-size: 2em;" class="link"  target=”_blank”>→ Accédez à CRYPTO ←</a>
 							</header>
 							<div class="content" style="font-weight:bold;font-size:1.5em;color:white;">
-								<p>Cette interface n'est restée qu'au stade de projet, mais son objectif initial était l'intégration et le suivi de plusieurs cryptomonnaies (bitcoin uniquement pour le moment), ainsi que la réalisation
-									d'analyses sur les données (par curiosité plutôt que pour des fins utiles !)
+								<p>Cette interface développée sous R a pour objectif de suivre et analyser les cours de différentes cryptomonnaies<br>
+									<br>
 								</p>
 							</div>
 						</div>
 					</section>
+					<section id="one" style = "height:350px;">
+						<div class="inner">
+							<header class="major">
+								<h2>Une interface graphique Highcharts</h2>
+							</header>
+							<p style = "font-size: 24px;"> L'application est basée sur le "web-scrapping" de données des principales cryptomonnaies (ainsi que les données historiques).
+								L'outil <a href="https://www.highcharts.com/" class="link"  target=”_blank”>Highcharts</a> est ensuite utilisé pour construire l'interface graphique.
+								L'application se met à jour à chaque raffraichissement de la page web.<br>
+							</p>
+						</div>
+					</section>
+					<div style = "height: 110vh;background-color: #1e222b;">
+						<iframe height="100%" width="100%" frameborder="no" src="https://devdeb.shinyapps.io/crypto/"> </iframe>
+					</div>
 
 				<!-- Main -->
-					<div id="main" style="background-color:#235c5e;">
+					<div id="main" style="background-color:#1e222b;">
 
 						<!-- One -->
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Une interface graphique Highcharts</h2>
+										<h3>Tendance du jour</h3>
 									</header>
-									<p> Le principe est simple : Il existe des packages dans R, permettant de récupérer en direct des données sur différentes cryptomonnaies (ainsi que les données historiques).
-										L'outil <a href="https://www.highcharts.com/" class="link"  target=”_blank”>Highcharts</a> est ensuite utilisé pour construire l'interface graphique.
-										L'application se met à jour à chaque raffraichissement de la page web.<br>
-										Il n'y pour l'instant pas grand chose à se mettre sous la dent ! mais j'ai bien espoir de pouvoir avoir le temps d'approndir cette application, dans un futur proche (ajout d'autres crypto et implémentation d'analyses statistiques)
+									<p style = "font-size: 24px;">La tendance du jour renseigne simplement sur l'évolution (en %) du cour de la cryptomonnaies analysée, par rapport à la veille.
+									</p>
+									<header class="major">
+										<h3>Cours des cryptomonnaies chaque mois de l'année</h3>
+									</header>
+									<p style = "font-size: 24px;">
+										Cette analyse permet d'agréger les données à une échelle mensuelle, et ainsi observer les mois de l'année où les cours sont les plus élevés.
+									</p>
+									<header class="major">
+										<h3>Série temporelle des cryptomonnaies</h3>
+									</header>
+									<p style = "font-size: 24px;">
+										Ce graphique permet de suivre dans le temps le cour des différentes cryptomonnaies, avec les moyennes journalières + les enveloppes min et max.
 									</p>
 								</div>
 							</section>
